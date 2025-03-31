@@ -1,0 +1,181 @@
+/* Shop Page css */
+
+@import url(https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap); /* Imports font from google fonts for the website */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Sets the basic view of the page */
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-color: #ffff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Sets the basic view of the nav bar */
+nav{
+    display: flex;
+    background-color: #08257B;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Displays the correct dimensions for the logo*/
+nav img{
+    border-radius: 50%; 
+    width: 130px;
+}
+
+/* Aligns the nav bar links with the center of the page */
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+/* Sets out the formatting of the nav bar */
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px, 12px;
+    position: relative;
+}
+
+/* Edits the text headings on the nav bar*/
+.nav-links ul li a{
+    color: #e9e7e4;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Creates nav bar hover effect */
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height:3px;
+    background: #e9e7e4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Display the nav bar hover effect */
+.nav-links ul li:hover::after{
+    width: 60%;
+}
+
+/* Display product on page */
+.product1 {
+    text-align: center;
+}
+
+.product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px, 12px;
+    border: 1px solid #e9e7e4;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06)
+}
+
+.product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.product1 .pro .des span{
+    color: #e9e7e4;
+    font-size: 12px;
+}
+
+.product1 .pro .des h5{
+    padding-top: 7px;
+    color:#000000;
+    font-size: 14px;
+}
+
+.product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25)
+}
+
+.product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page-header {
+    background-image: url(ShopImages/SolarPanelFitting.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.page-header h2,
+.page-header p {
+    color: #fff
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    background-color: #e9e7e4;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
